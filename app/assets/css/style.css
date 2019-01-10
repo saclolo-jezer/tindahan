@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*[class*="col"] {
+	border: 1px solid black;
+}*/
+
+.navbar {
+	margin-bottom: 50px;
+}
+
+.row {
+	margin-bottom: 10px;
+}
+
+#warn {
+	width: 25%;
+}
+
+#suc {
+	width: 50%;
+}
+
+#info {
+	width: 95%;
+}
+
+#media-pic {
+	
+}
