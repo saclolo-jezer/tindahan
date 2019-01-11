@@ -3,7 +3,7 @@
 <?php function get_page_content () { ?>
 
 	<div class="container-fluid">
-		<div class="jumbotron bg-dark">
+		<div class="jumbotron bg-warning">
 
 			<h1>TINDAHAN STORE</h1>
 			<p>Bili na po</p>	
