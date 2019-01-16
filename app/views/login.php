@@ -20,7 +20,7 @@
 		</form>
 			<div class="text-center py-4">
 				<a href="./register.php" class="btn btn-secondary">Register</a>
-				<button type="submit" class="btn btn-warning" id="login">Login</button>
+				<button type="submit" class="btn btn-danger" id="login">Login</button>
 			</div>
 		
 	</div>

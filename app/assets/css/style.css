@@ -31,3 +31,16 @@
 #media-pic {
 	
 }
+
+#bg {
+	background-image: url("../images/open.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#su {
+	color: red;
+}
+
