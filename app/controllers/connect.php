@@ -1,9 +1,9 @@
 <?php 
 
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'ecomm_db';
+$host = 'db4free.net';
+$username = 'tindahan';
+$password = 'tindahan1000';
+$dbname = 'tindahan_db';
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
 

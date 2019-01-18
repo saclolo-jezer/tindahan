@@ -6,7 +6,7 @@
 	<div class="container-fluid">
 		<div class="jumbotron bg-warning">
 
-			<h1 id="k">TINDAHAN STORE</h1>
+			<h1 id="su">TINDAHAN</h1>
 			<p>Bili na po</p>	
 		</div>
 	</div>

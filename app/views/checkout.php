@@ -1,7 +1,10 @@
 <?php require_once '../partials/template.php'; ?>
 <?php function get_page_content() { 
 	global $conn;  
-?>
+
+
+		if((isset($_SESSION['user'])) && $_SESSION['user']['roles_id'] == 2) {
+ ?>
 
 	<?php 
 	if (!isset($_SESSION['user'])) {
@@ -21,6 +24,19 @@
 						<input type="text" class="form-control" name="addressLine1" value="<?php echo $_SESSION['user']['address']; ?>">
 					</div><!-- end of from-group -->
 				</div><!-- end of col -->
+				<div class="col-sm-4">
+					<h4>Payment Methods</h4>
+					<select name="payment_mode" id="payment_mode" class="form-control">
+						<?php 
+							$payment_mode_query = "SELECT * FROM payment_modes";
+							$payment_modes = mysqli_query($conn, $payment_mode_query);
+							foreach ($payment_modes as $payment_mode) {
+								extract($payment_mode);
+								echo "<option value='$id'>$name</option>";
+							}
+						 ?>
+					</select>
+				</div><!-- end of col for payment methods -->
 			</div><!-- end of row -->
 				<h4>Order Summary</h4>
 			<div class="row">
@@ -84,6 +100,9 @@
 
 
 
+<?php } else {
+	header('Location: ./error.php');
+} ?>
 
 
 
